@@ -1,16 +1,11 @@
-require('dotenv').config({silent: true})
+require('dotenv').config({ true})
 
 const express = require('express');
 const bodyParser = require('body-parser');
 
 const assistant = require('./lib/assistant.js'
 const handleError = (res, err) => {
-  const status = err.code !== undefined && err.code > 0 ? err.code : 500;
-  return res.status(status).json(err);
-};
-
-app.get('/', (req, res) => {
-  testConnections().then(status => res.json({ status: status }));
+ 
 });
 
 /**
